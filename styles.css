@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3f0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #e4a4a4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+img.author-image {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #850b0b;
+    border-radius: 4px;
+}
+
+#audioPlayer::before {
+    content: attr(data-artist) " - " attr(data-song);
+    display: block;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #333;
+}
